@@ -1,0 +1,296 @@
+:root{
+    --clr-black : #1c1c1c;
+    --clr-gray : #ececec;
+    --clr-white : #f7f7f7;
+
+    --type-normal: #A8A878;
+    --type-fire : #f08030;
+    --type-water: #6890f0;
+    --type-grass : #78c850;
+    --type-electric : #f8d030;
+    --type-ice : #98d8d8;
+    --type-fighting : #c03028;
+    --type-poison : #a040a0;
+    --type-ground : #e0c068;
+    --type-flying : #a890f0;
+    --type-psychic : #f85888;
+    --type-bug : #a8b820;
+    --type-rock : #b8a838;
+    --type-ghost : #705898;
+    --type-dark : #705848;
+    --type-dragon: #7038f8;
+    --type-steel : #b8b8d0;
+    --type-fairy : #f0b6bc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--clr-black);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+}
+
+.nav-item{
+    list-style-type: none;
+}
+
+.btn{
+    all: unset;
+}
+
+.ver-normal{
+    background-color: var(--clr-gray);
+}
+
+.normal{
+    background-color: var(--type-normal);
+}
+
+.fire{
+    background-color: var(--type-fire);
+}
+
+.water{
+    background-color: var(--type-water);
+}
+
+.grass{
+    background-color: var(--type-grass);
+}
+
+.ice{
+    background-color: var(--type-ice);
+}
+
+.fighting{
+    background-color: var(--type-fighting);
+}
+
+.poison{
+    background-color: var(--type-poison);
+}
+
+.ground{
+    background-color: var(--type-ground);
+}
+
+.bug{
+    background-color: var(--type-bug);
+}
+
+.electric{
+    background-color: var(--type-electric);
+}
+
+.flying{
+    background-color: var(--type-flying);
+}
+
+.psychic{
+    background-color: var(--type-psychic);
+}
+
+.rock{
+    background-color: var(--type-rock);
+}
+
+.ghost{
+    background-color: var(--type-ghost);
+}
+
+.dark{
+    background-color: var(--type-dark);
+}
+
+.dragon{
+    background-color: var(--type-dragon);
+}
+
+.steel{
+    background-color: var(--type-steel);
+}
+
+.fairy{
+    background-color: var(--type-fairy);
+}
+
+/* estilando */
+
+body{
+    min-height: 100vh;
+    background-color: var(--clr-gray);
+}
+
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: start;
+    background-color: #ffff ;
+    box-shadow: 0 1.0625rem 15px -1rem rgb(212, 197, 197);
+}
+
+.divdeasdasdsad{
+    display: flex;
+    width: 100%;
+}
+
+.parabuscarelpojeon{
+    margin: auto;
+    
+}
+
+
+.botonpaasksdl{
+    all: unset;
+    border-radius: 40%;
+    padding: 0.5rem;
+    margin: .2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+
+.inoutparabuscarpomeones{
+    all: unset;
+
+}
+
+input[type="text"]{
+    text-align: center;
+}
+
+.inoutparabuscarpomeones::placeholder{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.botonpaasksdl:hover{
+    scale: 1.1;
+}
+
+.fotodepokemonbaner{
+    max-width: 10rem;
+}
+
+.nav-item{
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.btn{
+    border-radius: 100%;
+    padding: 1.5rem;
+    margin: .2rem;
+    box-shadow: 1px 1px .1875rem black;
+    margin-bottom: .625rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: capitalize;
+}
+
+.btn:hover{
+    scale: 1.1;
+}
+
+.todoslospokemones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 62.5rem;
+    margin: 0 auto;
+}
+
+.cardspokemones{
+    margin: 20px;
+    background-color: var(--clr-white);
+    border-radius: .9375rem;
+    max-width: 21.875rem;
+}
+
+.imagendelospokemos{
+    max-width: 10.625rem;
+}
+
+.imgdelpokemondivs{
+    display: flex;
+    justify-content: center;
+}
+
+.datosdelpokemon{
+    display: flex;
+    justify-content: space-between;
+    margin: 7px;
+}
+
+.nombredelpokemon{
+    text-transform: capitalize;
+    font-size: 1.2625rem;
+    font-weight: 900;
+}
+
+.numerodeserie{
+    font-weight: 400;
+    font-size: 1.2625rem;
+    background-color: var(--clr-gray);
+    padding: .325rem;
+    border-radius: 30%;
+}
+
+.pokemonvalor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tiposdepokemon{
+    padding: .825rem;
+    border-radius: 50%;
+    font-size: .9375rem;
+}
+
+.pokemonstats{
+    display: flex;
+    justify-content: space-around;
+    margin: .75rem;
+}
+
+@media (min-width: 200px) {
+    .todoslospokemones{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 680px) {
+    .todoslospokemones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .todoslospokemones{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 419px) {
+.parabuscarelpojeon{
+    margin-left: .8375rem;
+}
+.botonpaasksdl{
+    position: relative;
+    border: 1px solid #000;
+    left: 40px;
+
+}
+.inoutparabuscarpomeones{
+    border: 1px solid #000;
+}
+}
+
