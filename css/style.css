@@ -121,8 +121,18 @@
 body{
     min-height: 100vh;
     background-color: var(--clr-gray);
+    animation: aparecerfonso 0.3s ease;
 }
 
+.body-cambiar{
+    background-color:#000 ;
+}
+
+.luna{
+    max-width: 2rem;
+    max-height: 2rem;
+    cursor: pointer;
+}
 
 
 nav{
@@ -137,6 +147,7 @@ nav{
 .divdeasdasdsad{
     display: flex;
     width: 100%;
+    align-items: center;
 }
 
 .parabuscarelpojeon{
@@ -292,5 +303,14 @@ input[type="text"]{
 .inoutparabuscarpomeones{
     border: 1px solid #000;
 }
+}
+
+@keyframes aparecerfonso {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 

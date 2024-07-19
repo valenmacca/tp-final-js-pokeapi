@@ -88,6 +88,11 @@ async function guardarlospokemones() {
 
 guardarlospokemones();
 
+let bodycambiar = document.getElementById("bodycambiar")
+let lunacambiar = document.getElementById("lunacambiar");
 
+lunacambiar.addEventListener("click", function(){
+    bodycambiar.classList.toggle("body-cambiar")
+})
 
 // ``
